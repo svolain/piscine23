@@ -1,0 +1,32 @@
+#include<stdio.h>
+ 14
+ 15 void    ft_ultimate_div_mod(int *a, int *b)
+ 16 {
+ 17     int acopy;
+ 18     int bcopy;
+ 19
+ 20     acopy = *a;
+ 21     bcopy = *b;
+ 22     *a = acopy / bcopy;
+ 23     *b = acopy % bcopy;
+ 24 }
+ 25
+ 26 int main(void)
+ 27 {
+ 28     int *a;
+ 29     int *b;
+ 30     int i;
+ 31     int j;
+ 32
+ 33     i = 15;
+ 34     j = 5;
+ 35     a = &i;
+ 36     b = &j;
+ 37
+ 38     printf("%d", i);
+ 39     printf("%d", j);
+ 40     ft_ultimate_div_mod(a, b);
+ 41     printf("%d", i);
+ 42     printf("%d", j);
+ 43
+ 44 }

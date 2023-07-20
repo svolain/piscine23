@@ -1,0 +1,28 @@
+#include<stdio.h>
+
+void    ft_div_mod(int a, int b, int *div, int *mod)
+{
+    *div = a/b;
+    *mod = a%b;
+}
+
+int main(void)
+{
+    int *div;
+    int *mod;
+    int a;
+    int b;
+    int m;
+    int d;
+
+    a = 15;
+    b = 5;
+    m = 0;
+    d = 0;
+    div = &d = &d;;
+    mod = &m;
+
+    ft_div_mod(a, b, div, mod);
+    printf("%d", *div);
+    printf("%d", *mod);
+}

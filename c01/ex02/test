@@ -1,0 +1,22 @@
+int main (void)
+{
+    int *f;
+    int *s;
+    int i;
+    int j;
+
+    i = 9;
+    j = 2;
+    f = &i;
+    s = &j;
+
+    printf("%d\n", *f);
+    printf("%d\n", *s);
+
+    ft_swap(f, s);
+
+    printf("%d\n", *f);
+    printf("%d\n", *s);
+
+    return(0);
+}
